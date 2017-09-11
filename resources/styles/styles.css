@@ -27,8 +27,7 @@ a {
 
 footer {
   display: flex;
-  height: 300px;
-  margin-top: 81px;;
+  height: 250px;
   background-color: MediumAquamarine;
   justify-content: center;
   align-items: center;
@@ -91,6 +90,42 @@ footer {
 
 #logo-text {
   color: MediumAquamarine;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  margin-top: 81px;;
+  width: 100%;
+  min-height: 400px;
+  background-color: #FFF;
+}
+
+#main-content {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 0 1340px;
+  background-color: lightgray;
+}
+
+.column {
+
+}
+
+.column.large {
+  background-color: red;
+  width: 630px;
+}
+
+.column.medium {
+  background-color: orange;
+  width: 300px;
+}
+
+.column.small {
+  background-color: yellow;
+  width: 240px;
 }
 
 #footer-copyright {
