@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: MediumAquamarine;
 }
 
 header {
@@ -49,11 +50,26 @@ footer {
   color: #000;
 }
 
-.header-text.footer-logo {
+.footer-text {
+  font-size: 12px;
+  font-family: verdana;
+  font-weight: normal;
+  text-decoration: underline;
+  display: inline-block;
+  margin: auto 10px;
+}
+
+.footer-text.footer-logo {
   font-family: Georgia;
   font-size: 16px;
   font-weight: bold;
+  text-decoration: none;
   color: white;
+}
+
+.footer-element {
+  display: flex;
+  margin: 20px auto;
 }
 
 #header-container {
@@ -77,10 +93,6 @@ footer {
   color: MediumAquamarine;
 }
 
-#nav-footer {
-  margin: 25px auto;
-}
-
 #footer-copyright {
-  margin: 0 auto;
+  margin: auto;
 }
