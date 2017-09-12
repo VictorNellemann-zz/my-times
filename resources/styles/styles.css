@@ -7,6 +7,7 @@ body {
 }
 
 /*Header and navigation styling*/
+
 header {
   position: fixed;
   width: 99%;
@@ -68,7 +69,7 @@ a {
 h2 {
   font-size: 30px;
   color: #000;
-  margin: 0 0 1.3em 0;
+  margin: 0 0 0 0;
 }
 
 .column {
@@ -77,6 +78,7 @@ h2 {
 
 .column.large {
   display: inline-flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   flex: 0 3 630px;
 }
@@ -91,20 +93,6 @@ h2 {
   display: inline-flex;
   flex-wrap: wrap;
   flex: 0 1 240px;}
-
-.teaser-image {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 1em;
-}
-
-.teaser-image h2 {
-  display: inline-flex;
-  color: #FFF;
-  font-size: 30px;
-}
 
 #site-main {
   display: flex;
@@ -121,23 +109,64 @@ h2 {
   justify-content: space-between;
   align-items: flex-start;
   flex: 0 1340px;
+  flex-wrap: wrap;
 }
 
 #content p {
   line-height: 1.3;
 }
 
-/*Specific styling of main article teaser*/
-#art-main {
-  width: 100%;
-  padding: 0 2em;
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
-  background-color: lightgray;
+/*Specific styling for content - Teasers*/
+
+.teaser {
+  margin-bottom: 1em;
 }
 
-#art-main h2 {
+.teaser.main-w600 {
+  width: 600px;
+}
+
+.teaser.main-w600.teaser.image {
+  width: auto;
+  padding: 0 2em;
+  margin-bottom: 1em;
+}
+
+.teaser.main-w600.teaser.image h2 {
   font-size: 40px;
+  text-align: left;
   margin: auto;
+}
+
+.teaser.main-w600 p {
+  margin-top: 0;
+}
+
+.teaser.story {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.teaser.story.w300 {
+  width: 300px;
+}
+
+.teaser.image {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  margin-bottom: 1em;
+}
+
+.teaser.image.w300 {
+  width: 300px;
+}
+
+.teaser.image h2 {
+  color: #FFF;
+  font-size: 30px;
+  text-align: center;
 }
 
 /*Footer styling*/
