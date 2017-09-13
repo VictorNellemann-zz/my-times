@@ -62,6 +62,10 @@ nav {
 
 /*Content styling*/
 
+p {
+    margin-top: 0.5em;
+}
+
 a {
   color: MediumAquamarine;
 }
@@ -106,10 +110,11 @@ h2 {
 
 #content {
   display: inline-flex;
-  justify-content: space-between;
-  align-items: flex-start;
   flex: 0 1340px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 2em;
 }
 
 #content p {
@@ -120,6 +125,10 @@ h2 {
 
 .teaser {
   margin-bottom: 1em;
+}
+
+.geo-tag {
+  text-transform: uppercase;
 }
 
 .teaser.main-w600 {
@@ -143,7 +152,6 @@ h2 {
 }
 
 .teaser.story {
-  max-height: 300px;
   overflow: hidden;
 }
 
@@ -153,6 +161,7 @@ h2 {
 
 .teaser.image {
   height: 300px;
+  max-height: 300px;
   display: flex;
   align-items: center;
   background-color: lightgray;
