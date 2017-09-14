@@ -98,6 +98,19 @@ h2 {
   flex-wrap: wrap;
   flex: 0 1 240px;}
 
+.nav-vertical {
+  width: 100%;
+  display: block;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+
+}
+
+
 #site-main {
   display: flex;
   justify-content: center;
